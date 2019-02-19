@@ -1,14 +1,18 @@
 {
   "name": "e-notes",
   "version": "0.1.0",
+  "homepage": "https://mildredpastryk.github.io/e-notes",
   "private": true,
   "dependencies": {
+    "gh-pages": "^2.0.1",
     "react": "^16.8.2",
     "react-dom": "^16.8.2",
     "react-icons": "^3.4.0",
     "react-scripts": "2.1.5"
   },
   "scripts": {
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -b master -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
