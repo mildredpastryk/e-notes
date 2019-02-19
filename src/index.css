@@ -23,7 +23,7 @@ div.board {
     background: -webkit-radial-gradient(center, ellipse cover, #eab92d 57%, #c79810 99%);
     background: -o-radial-gradient(center, ellipse cover, #eab92d 57%, #c79810 99%);
     background: -ms-radial-gradient(center, ellipse cover, #eab92d 57%, #c79810 99%);
-    background: radial-gradient(ellipse at center, #eab92d 57%, #c79810 99%);
+    background: radial-gradient(ellipse at center, #eab92d 57%, #2e14cb 99%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eab92d', endColorstr='#c79810', GradientType=1);
 
 }
@@ -33,7 +33,7 @@ div.note {
     width: 250px;
     background-color: yellow;
     margin: 2px 0;
-    position: absolute;
+    position: relative;
     cursor: -webkit-grab;
     -webkit-box-shadow: 5px 5px 15px 0 rgba(0, 0, 0, .2);
     box-shadow: 5px 5px 15px 0 rgba(0, 0, 0, .2);
