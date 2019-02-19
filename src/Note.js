@@ -32,7 +32,7 @@ class Note extends Component {
         return (
             <div className="note">
                 <form>
-                    <textarea ref={input => this._newText = input} />
+                    <textarea ref={input => this._newText = input} />  
                     <button onClick={this.save}><FaSave /></button>
                 </form>
             </div>)
