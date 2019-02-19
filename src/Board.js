@@ -20,11 +20,25 @@ class Board extends Component {
                 }
             ]
         }
+        this.add = this.add.bind(this)
         this.eachNote = this.eachNote.bind(this)
         this.update = this.update.bind(this)
         this.remove = this.remove.bind(this)
     }
     
+    add(text) {
+         this.setState(prevState => ({
+             notes: [
+                 ...prevState.notes,
+                 {
+                     id: 3,
+                     note: text
+                 }
+             ]
+         }))
+    }
+    
+        
     update(newText, i) {
         console.log('updating the note', i, newText)
         this.setState(prevState => ({
