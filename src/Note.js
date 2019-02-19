@@ -32,11 +32,17 @@ class Note extends Component {
     
     componentDidUpdate() {
         var textArea
-        if(tis.state.editing) {
+        if(this.state.editing) {
             textArea = this._newText
             textArea.focus(
             textArea.select())
         }
+    }
+    
+    shouldComponentUpdate(nextProps, nextState) {
+        return (
+            this.props.children !== nextProps.children || this.state !== nextState    
+        )
     }
     
     edit() {
@@ -60,7 +66,7 @@ class Note extends Component {
             <div className="note" style={this.style}>
                 <form onSubmit={this.save}>
                     <textarea ref={input => this._newText = input}
-                        deafultValue={this.props.children}/>  
+                        defaultValue={this.props.children}/>  
                     <button id="save"><FaSave /></button>
                 </form>
             </div>
