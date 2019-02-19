@@ -4,6 +4,11 @@ import { FaTrash } from 'react-icons/fa'
 
 
 class Note extends Component {
+    constructor(props) {
+        super(props)
+        this.edit = this.edit.bind(this)
+        this.remove = this.remove.bind(this)
+    }
     edit() {
         alert('editing note')
     }
